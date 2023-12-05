@@ -1,0 +1,12 @@
+1)
+#include <iostream>
+using namespace std;
+int main() {
+    int a,b,n;
+    cin>>a>>b>>n;
+    int sum1=0,sum2=0;
+    sum1=a*n;
+    sum2=b*n;
+    cout<<sum1<<" som"<<" "<<sum2<<" tyiyn ";
+    return 0;
+}
