@@ -1,0 +1,26 @@
+3)
+#include <iostream> 
+using namespace std; 
+void Count(int arr[], int arr_size) 
+{ 
+    int even_count = 0; 
+    int odd_count = 0; 
+    for (int i = 0; i < arr_size; i++) { 
+        if (arr[i] & 1 == 1) 
+            odd_count++; 
+        else
+            even_count++; 
+    } 
+    cout << "Odd :" << odd_count 
+         << "\nEven:" << even_count; 
+} 
+int main() 
+{ 
+    int arr[5];
+   int  arr_size;
+   cin>>arr_size;;
+  for (int i = 0; i < arr_size; i++) 
+    cin>>arr[i];
+    int n = sizeof(arr) / sizeof(arr[0]); 
+      // Function Call 
+    Count(arr, n); 
